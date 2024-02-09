@@ -1,0 +1,34 @@
+/*
+==============================
+    header-area
+==============================
+*/
+	
+.header-sticky-pwd {
+    transition: all .2s;
+}
+
+
+<script>
+
+
+(function ($) {
+"use strict";
+
+	/* ==========================================================================
+			html jQuery 
+    ========================================================================== */
+	$("button#wpforms-submit-396").html("<strong>hello</strong>");
+
+	$(window).on('scroll',function() {    
+		var scroll = $(window).scrollTop();
+		if (scroll < 5) {
+			$(".header-sticky-pwd").removeClass("scroll-header");
+		}else{
+			$(".header-sticky-pwd").addClass("scroll-header");
+		}
+	});
+
+})(jQuery);
+
+</script>
